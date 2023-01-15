@@ -5,26 +5,25 @@ public class Main {
     public static void main(String[]args){
 
         B b = new B();
-        b.meth();
-        b.meth();
+        System.out.println(b.meth());
+      }
+
+    public static class A{
+
+       public static String meth(){
+            return "Invoking method from class A";
+        }
+    }
+
+    public static class B extends A{
 
 
-
+        public static String meth() {
+            return "Method is overridden in Extended class B";
+        }
     }
   
 }
 
-class A{
 
-    String meth(){
-        return "Invoking method from class A";
-    }
-}
 
-class B extends A{
-
-    @Override
-    String meth() {
-        return "Method is overridden in Extended class B";
-    }
-}
