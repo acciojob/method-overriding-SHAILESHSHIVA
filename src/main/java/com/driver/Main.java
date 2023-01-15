@@ -10,7 +10,7 @@ public class Main {
 
     public static class A{
 
-       public static String meth(){
+        public static String meth(){
             return "Invoking method from class A";
         }
     }
