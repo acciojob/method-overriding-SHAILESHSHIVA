@@ -9,7 +9,7 @@ public class Main {
         }
     }
 
-    private class B extends A{
+    private static class B extends A{
 
         @Override
         String meth() {
